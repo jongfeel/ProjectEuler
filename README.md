@@ -22,3 +22,5 @@ ProjectEuler practice
 ## Problems
 
 ### [Problem1, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problem1)
+
+### [Problem2, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problem2)
