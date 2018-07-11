@@ -9,10 +9,4 @@ def Fibonacci(untilNumber):
         yield a
         a, b = b, a + b
 
-sum = 0
-for fibonicciNumber in Fibonacci(4000000):
-    # print(fibonicciNumber)
-    if fibonicciNumber % 2 == 0:
-        sum += fibonicciNumber
-
-print (sum)
+print(sum(fibonicciNumber for fibonicciNumber in Fibonacci(4000000) if fibonicciNumber % 2 == 0))
