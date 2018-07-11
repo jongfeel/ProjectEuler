@@ -30,3 +30,4 @@ python Problem2.py
 ## Solve - use sum function
 
 - python의 for in 문 뒤에 if문을 연결해서 짝수를 구하고 바로 sum function을 사용해서 합을 구해서 한줄로 구현
+- 기존 코드와 비교 [07660b](https://github.com/jongfeel/ProjectEuler/commit/07660b352f0a14248d82e14cd9b73bc6e69b5b99)
