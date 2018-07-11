@@ -26,3 +26,7 @@ python Problem2.py
 
 - 사실 python으로 피보나치 수열을 generator로 구하는 코드를 알고 있었음
 - 피보나치 수열의 값이 4,000,000 이하일떄 까지 루프를 돌면서 2로 나눠서 나머지가 0인 값 => 즉 짝수 값만 체크해서 합을 구함
+
+## Solve - use sum function
+
+- python의 for in 문 뒤에 if문을 연결해서 짝수를 구하고 바로 sum function을 사용해서 합을 구해서 한줄로 구현
