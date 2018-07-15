@@ -24,12 +24,12 @@ ProjectEuler practice
 
 ### [Problem1, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problem1)
 
-- 2018 Jun Ranking Top 1: Java
+- TIOBE index for July 2018, Ranking Top 1: Java
 
 ### [Problem2, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problem2)
 
-- 2018 Jul Ranking Top 4: Python
+- TIOBE index for July 2018, Ranking Top 4: Python
 
 ### [Problem3, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problem3)
 
-- 2018 Jul Ranking Top 5: Visual Basic .NET
+- TIOBE index for July 2018, Ranking Top 5: Visual Basic .NET
