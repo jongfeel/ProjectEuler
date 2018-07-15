@@ -24,7 +24,7 @@ ProjectEuler practice
 
 ### [Problem1, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problem1)
 
-- TIOBE index for July 2018, Ranking Top 1: Java
+- TIOBE index for Jun 2018, Ranking Top 1: Java
 
 ### [Problem2, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problem2)
 
