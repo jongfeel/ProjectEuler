@@ -13,14 +13,30 @@ English: [https://projecteuler.net/problem=3](https://projecteuler.net/problem=3
 
 ## Test - bash
 
+Run Visual Studio Command Prompt
+More info: [https://docs.microsoft.com/en-us/dotnet/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler](https://docs.microsoft.com/en-us/dotnet/visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler)
+
+```bash
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsDevCmd.bat
+```
+
+Change directory git root: /Problem3
+and compile
+
 ```bash
 vbc Problem3.vb
 ```
 
+Run
+
+```bash
+Problem3.exe
+```
+
 ## Test - Visaul Studio Community 2017
 
-- Open folder "Problem3" by Visual Studio Community 2017
-- Check out install packages - .NET Core 2.0
+- Open visual studio solution file "Problem3.sln" by Visual Studio Community 2017
+- Check out install packages - .NET Core 2.0 and Visual Basic Environment
 - Press F5 to debug start
 
 ## Solve
