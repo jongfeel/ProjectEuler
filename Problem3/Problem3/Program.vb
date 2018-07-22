@@ -4,21 +4,23 @@ Module Program
     Sub Main(args As String())
         Dim GivenNumber As ULong = 600851475143
         Dim Index As ULong = 2
-        Dim PrimeFactor As ULong = 0
+        Dim IsPrimeFactor As ULong = 0
+        Dim LargestPrimeFactor As ULong = 0
 
         While Index <= GivenNumber
             If IsPrime(Index) Then
                 'Console.WriteLine("Prime number: {0}", Index)
-                PrimeFactor = GivenNumber Mod Index
-                If PrimeFactor = 0 Then
-                    Console.WriteLine("Prime factor: {0}", Index)
+                IsPrimeFactor = GivenNumber Mod Index
+                If IsPrimeFactor = 0 Then
+                    'Console.WriteLine("Prime factor: {0}", Index)
                     GivenNumber /= Index
+                    LargestPrimeFactor = Index
                 End If
             End If
             Index += 1
         End While
 
-        Console.WriteLine("Loop end")
+        Console.WriteLine(LargestPrimeFactor)
         Console.ReadLine()
 
     End Sub
