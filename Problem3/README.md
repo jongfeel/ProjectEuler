@@ -11,6 +11,10 @@ English: [https://projecteuler.net/problem=3](https://projecteuler.net/problem=3
 - Framework: .NET Core 2.0
 - Visual Studio Project: .NET Core Console App
 
+## .NER Core 2.1 SDK Downloads
+
+- [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download)
+
 ## Test - bash
 
 Change directory git root: /Problem3
