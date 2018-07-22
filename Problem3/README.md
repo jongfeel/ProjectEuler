@@ -11,7 +11,7 @@ English: [https://projecteuler.net/problem=3](https://projecteuler.net/problem=3
 - Framework: .NET Core 2.0
 - Visual Studio Project: .NET Core Console App
 
-## .NER Core 2.1 SDK Downloads
+## .NER Core 2.1 SDK Downloads (If you do not want Visual Studio Community 2017)
 
 - [https://www.microsoft.com/net/download](https://www.microsoft.com/net/download)
 
