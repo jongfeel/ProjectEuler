@@ -3,24 +3,16 @@ Imports System
 Module Program
     Sub Main(args As String())
         Dim GivenNumber As ULong = 600851475143
-        Dim PrimeFactor As ULong = 2
-
-
-        'While GivenNumber <= PrimeFactor
-
-        'End While
-
-        Dim ToNumber As ULong = 600851475143
         Dim Index As ULong = 2
-        Dim Factor As ULong = 0
+        Dim PrimeFactor As ULong = 0
 
-        While Index <= ToNumber
+        While Index <= GivenNumber
             If IsPrime(Index) Then
                 'Console.WriteLine("Prime number: {0}", Index)
-                Factor = toNumber Mod Index
-                If Factor = 0 Then
-                    Console.WriteLine("factor: {0}", Index)
-                    toNumber /= Index
+                PrimeFactor = GivenNumber Mod Index
+                If PrimeFactor = 0 Then
+                    Console.WriteLine("Prime factor: {0}", Index)
+                    GivenNumber /= Index
                 End If
             End If
             Index += 1
