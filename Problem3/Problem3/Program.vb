@@ -26,7 +26,7 @@ Module Program
     End Sub
 
     Function IsPrime(ByVal toNumber As ULong) As Boolean
-        For index As Integer = 2 To toNumber
+        For index As Integer = 2 To Math.Sqrt(toNumber)
             If toNumber Mod index = 0 And index <> toNumber Then
                 Return False
             End If
