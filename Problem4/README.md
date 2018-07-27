@@ -1,0 +1,40 @@
+# Problem 4
+
+Korean: [http://euler.synap.co.kr/prob_detail.php?id=4](http://euler.synap.co.kr/prob_detail.php?id=4)
+
+English: [https://projecteuler.net/problem=4](https://projecteuler.net/problem=4)
+
+## System Requirement
+
+- Tool: Visual Studio Code
+- Language: C
+- Compiler: gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0
+- Use MinGW
+
+## MinGW Download (only windows)
+
+- [https://sourceforge.net/projects/mingw/files/](https://sourceforge.net/projects/mingw/files/)
+
+## Test - bash
+
+Change directory git root: /Problem4
+and compile
+
+```bash
+gcc Problem4.c
+```
+
+Run
+
+```bash
+a
+```
+
+## Test - Visaul Studio Code
+
+- Open folder "Problem4" by Visual Studio Code
+- Check out settings: launch.json and tasks.json
+- Press F5 to debug start
+
+## Solve
+
