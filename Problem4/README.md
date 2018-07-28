@@ -24,6 +24,10 @@ and compile
 gcc Problem4.c
 ```
 
+> Windows Environment Settings
+
+> System Variable > Path > Add "C:\MinGW\bin" (Installed path)
+
 Run
 
 ```bash
@@ -34,6 +38,11 @@ a
 
 - Open folder "Problem4" by Visual Studio Code
 - Check out settings: launch.json and tasks.json
+    - launch.json
+        - "miDebuggerPath": "C:/mingw/bin/gdb.exe"
+        - Use MinGW installed your path
+    - tasks.json
+        - Use gdb debug: args[0] = "-g"
 - Press F5 to debug start
 
 ## Solve
