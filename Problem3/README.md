@@ -40,7 +40,6 @@ dotnet run
 
 - Prime number 구하는 알고리즘은 흔하다.
 - 잘 생각해 보면 실제로 prime factor를 구해서 나눠 가면서 구하는게 답인 것 같다.
-- 이 전에 쓴 글에서는 주어진 숫자보다 작은 prime number를 구하는 거였는데, 그렇게 가면 생각보다 훨씬 많은 prime number를 구하면서 factor를 찾아야 하므로
-- 정공법으로 구해본다.
-- 생각을 바꾼 이유는 factor로 나눗셈을 하는 과정에서 끝까지 구해야 하는 prime number와 factor의 범위는 n/factor로 더욱 작아지므로 결국 뒤에서 찾는 것 보다 더 빨리 찾을 수 있다.
+- 처음에는 주어진 숫자보다 작은 prime number를 차례로 구하면 될거라 생각했는데, 그렇게 하면 생각보다 훨씬 많은 prime number를 구하면서 factor를 찾아야 한다.
+- 그래서 다시 정공법으로 구해보는 걸로 바꿨는데 그 이유는 factor로 나눗셈을 하는 과정에서 끝까지 구해야 하는 prime number와 factor의 범위는 n/factor로 더욱 작아지므로 결국 뒤에서 찾는 것 보다 더 빨리 찾을 수 있다.
 - 시간 복잡도 역시 (사실상) O(n)으로 결정될 수 있다. (원래 복잡도는 O(sqrt(n))이다.) n보다 작은 factor를 찾아낸다면 n은 급격히 줄어들지만 최악의 경우의 factor는 자기 자신인 n일 수 있으므로 결국 factor를 찾아내는 과정은 최대 n이다.
