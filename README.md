@@ -42,3 +42,7 @@ ProjectEuler practice
 ### [Problem5, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problem5)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
+
+### [Problem6, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problem6)
+
+- TIOBE index for August 2018, Ranking Top 3: C++
