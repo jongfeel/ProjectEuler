@@ -1,4 +1,4 @@
-# Problem 5
+# Problem 6
 
 ## Sum square difference
 
@@ -25,7 +25,7 @@ English: [https://projecteuler.net/problem=6](https://projecteuler.net/problem=6
 
 ## Test - bash
 
-Change directory git root: /Problem5
+Change directory git root: /Problem6
 and compile
 
 ```bash
