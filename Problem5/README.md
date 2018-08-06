@@ -1,7 +1,10 @@
 # Problem 5
 
-Korean: [http://euler.synap.co.kr/prob_detail.php?id=5](http://euler.synap.co.kr/prob_detail.php?id=5)
+## Smallest multiple
+> 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\
+What is the smallest positive number that is *evenly divisible* (divisible with no remainder) by all of the numbers from 1 to 20?
 
+Korean: [http://euler.synap.co.kr/prob_detail.php?id=5](http://euler.synap.co.kr/prob_detail.php?id=5)\
 English: [https://projecteuler.net/problem=5](https://projecteuler.net/problem=5)
 
 ## System Requirement
@@ -24,7 +27,7 @@ and compile
 g++ Problem5.cpp
 ```
 
-with debugging https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options
+[with debugging](https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options)
 
 ```bash
 g++ -g Problem5.cpp

@@ -14,6 +14,7 @@ int main()
         }
     }
 
+    cout << "To end of program, input any character and enter...";
     cin >> input;
     return 0;
 }
