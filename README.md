@@ -23,30 +23,30 @@ ProjectEuler practice
 
 ## Problems
 
-### [Problem1, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problem1)
+### [Problem 7, 10001st prime, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem7)
 
-- TIOBE index for Jun 2018, Ranking Top 1: Java
+- TIOBE index for August 2018, Ranking Top 4: Python
 
-### [Problem2, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problem2)
+### [Problem 6, Sum square difference, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem6)
 
-- TIOBE index for July 2018, Ranking Top 4: Python
+- TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem3, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problem3)
+### [Problem 5, Smallest multiple, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem5)
 
-- TIOBE index for July 2018, Ranking Top 5: Visual Basic .NET
+- TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem4, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problem4)
+### [Problem 4, Smallest multiple, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem4)
 
 - TIOBE index for July 2018, Ranking Top 2: C
 
-### [Problem5, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problem5)
+### [Problem 3, Largest prime factor, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem3)
 
-- TIOBE index for August 2018, Ranking Top 3: C++
+- TIOBE index for July 2018, Ranking Top 5: Visual Basic .NET
 
-### [Problem6, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problem6)
+### [Problem 2, Even Fibonacci numbers, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem2)
 
-- TIOBE index for August 2018, Ranking Top 3: C++
+- TIOBE index for July 2018, Ranking Top 4: Python
 
-### [Problem7, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problem7)
+### [Problem 1, Multiples 3 and 5, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem1)
 
-- TIOBE index for August 2018, Ranking Top 4: Python
+- TIOBE index for Jun 2018, Ranking Top 1: Java
