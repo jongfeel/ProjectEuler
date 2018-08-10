@@ -35,7 +35,7 @@ ProjectEuler practice
 
 - TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem 4, Smallest multiple, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem4)
+### [Problem 4, Largest palindrome product, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem4)
 
 - TIOBE index for July 2018, Ranking Top 2: C
 
