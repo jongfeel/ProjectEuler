@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 8, Largest product in a series, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem8)
+
+- TIOBE index for August 2018, Ranking Top 1: Java
+
 ### [Problem 7, 10001st prime, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem7)
 
 - TIOBE index for August 2018, Ranking Top 4: Python
