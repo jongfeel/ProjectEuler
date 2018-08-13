@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 9, Special Pythagorean triplet, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem9)
+
+- TIOBE index for August 2018, Ranking Top 2: C
+
 ### [Problem 8, Largest product in a series, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem8)
 
 - TIOBE index for August 2018, Ranking Top 1: Java
