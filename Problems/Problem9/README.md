@@ -81,6 +81,12 @@ a
 - nested for loop에서 이미 a < b가 되게 초기값을 넣어 줬고, b 역시 c보다 클 수 없는 499의 값까지 loop문을 돌게 되어 있다. 그러므로 if문 조건 삭제가 가능하다.
 - 기존 코드와 비교: [c08f5c](https://github.com/jongfeel/ProjectEuler/commit/c08f5cc113cf4beb16298f1a3753bca4ab2ca531)
 
+## Solve3
+
+- 바깥 loop문의 a는 점차 증가하는데 안쪽 loop의 b는 여전히 499까지 돌고 있으므로 b > c가 되는 시점이 온다는 걸 놓쳤다.
+- 다시 b < c 조건을 b for문 안에 넣어서 조금이라도 loop 횟수를 줄인다.
+- 기존 코드와 비교: [befe24](https://github.com/jongfeel/ProjectEuler/commit/befe24b8935491b7bdb5ba84215ea9ff0b4a88ab)
+
 ## Review
 
 - nested for loop를 빠져나오는데 goto문에 맛들리고 있다. 너무 편한 듯.
