@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
 
 	for (int a=1; a<=332; a++)
 	{
-		for (int b=a+1; b<=499; b++)
+		for (int b=a+1; b<=499 && b < c; b++)
 		{
 			int c = 1000 - b - a;
 
