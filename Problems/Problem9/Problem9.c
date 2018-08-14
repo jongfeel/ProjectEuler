@@ -6,13 +6,9 @@ int main(int argc, char* argv[])
 
 	for (int a=1; a<=332; a++)
 	{
-		for (int b=a+1; b<=1000-334-a; b++)
+		for (int b=a+1; b<=499; b++)
 		{
 			int c = 1000 - b - a;
-			if (b >= c)
-			{
-				break;
-			}
 
 			if (a*a + b*b == c*c)
 			{                     
