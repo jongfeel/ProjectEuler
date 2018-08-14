@@ -3,12 +3,13 @@
 int main(int argc, char* argv[])
 {
 	int input;
+	int c = 997; // init max c = 1000 - 2 - 1 (1000 - b - a)
 
 	for (int a=1; a<=332; a++)
 	{
 		for (int b=a+1; b<=499 && b < c; b++)
 		{
-			int c = 1000 - b - a;
+			c = 1000 - b - a;
 
 			if (a*a + b*b == c*c)
 			{                     
@@ -16,6 +17,7 @@ int main(int argc, char* argv[])
 				printf("%d\n", a * b * c);
 				goto end;
 			}
+			// printf("a=%d, b=%d, c=%d\n", a, b, c);
 		}
 	}
 
