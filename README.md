@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 10, Summation of primes, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem10)
+
+- TIOBE index for August 2018, Ranking Top 5: Visual Basic .NET
+
 ### [Problem 9, Special Pythagorean triplet, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem9)
 
 - TIOBE index for August 2018, Ranking Top 2: C
