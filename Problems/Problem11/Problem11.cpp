@@ -27,6 +27,12 @@ int main()
                         20, 73, 35, 29, 78, 31, 90, 01, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 05, 54,
                         01, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 01, 89, 19, 67, 48,};
 
+    int rightMax = 1;
+    int downRightMax = 1;
+    int downMax = 1;
+    int rightUpMax = 1;
+    int maxValue = 0;
+
     for (int i=0; i<20; i++)
     {
         for (int j=0; j<20; j++)
@@ -38,42 +44,50 @@ int main()
                 // [0,0],[0,1],[0,2],[0,3]
                 // [0,1],[0,2],[0,3],[0,4]
                 // [0,2],[0,3],[0,4],[0,5]
-                // if (k < 20)
-                // {
-                //     cout << grid[i][k] << " ";
-                // }
+                if (k < 20)
+                {
+                    //cout << grid[i][k] << " ";
+                    rightMax *= grid[i][k];
+                }
                 
                 //down-right:
                 // [0,0],[1,1],[2,2],[3,3]
                 // [0,1],[1,2],[2,3],[3,4]
                 // [0,2],[1,3],[2,4],[3,5]
-                // if (k-j+i < 20 && k < 20)
-                // {
-                //     cout << grid[k-j+i][k] << " ";
-                // }
+                if (i-j+k < 20 && k < 20)
+                {
+                    //cout << grid[i-j+k][k] << " ";
+                    downMax *= grid[i-j+k][k];
+                }
                 
                 //down:
                 // [0,0],[1,0],[2,0],[3,0]
                 // [0,1],[1,1],[2,1],[3,1]
                 // [0,2],[1,2],[2,2],[3,2]
-                // if (k-j+i < 20)
-                // {
-                //     cout << grid[k-j+i][j] << " ";
-                // }
+                if (i-j+k < 20)
+                {
+                    //cout << grid[i-j+k][j] << " ";
+                    downRightMax *= grid[i-j+k][j];
+                }
 
                 // right-up:
                 // [0,0] [1,0] [2,0]
                 // [1,0],[0,1] [1,1],[0,2] [1,2][0,3]
                 // [2,0][1,1][0,2] [2,1][1,2][0,3] [2,2][1,3][0,4]
                 // [3,0][2,1][1,2][0,3] [3,1][2,2][1,3][0,4] [3,2][2,3][1,4][0,5]
-                // if (i+j-k >= 0 && k < 20)
-                // {
-                //     cout << grid[i+j-k][k] << " ";
-                // }
+                if (i+j-k >= 0 && k < 20)
+                {
+                    //cout << grid[i+j-k][k] << " ";
+                    rightUpMax *= grid[i+j-k][k];
+                }
             }
-            cout << endl;
+            maxValue = max(rightUpMax, max(downRightMax, max(downMax, max(maxValue, rightMax))));
+            rightMax = downMax = downRightMax = rightUpMax = 1;
+            //cout << endl;
         }
     }
+
+    cout << maxValue << endl;
 
     cout << "To end of program, input any character and enter...";
     cin >> input;
