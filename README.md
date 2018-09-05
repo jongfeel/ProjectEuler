@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 15, Lattice paths, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem15)
+
+- TIOBE index for September 2018, Ranking Top 2: C
+
 ### [Problem 11, Largest product in a grid, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem11)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
