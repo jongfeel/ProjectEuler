@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-unsigned long Factorial(int n)
+long double Factorial(unsigned int n)
 {
 	int start = 2;
-	unsigned long value = 1;
+	long double value = 1;
 	while (start <= n)
 	{
 		value *= start;
@@ -21,7 +21,8 @@ int main(int argc, char* argv[])
 	unsigned int n = gridSize * 2;
 	unsigned int r = gridSize;
 
-	printf("%lu\n", Factorial(40));
+	// Combination: C(n,r) = n! / r!(n-r)!
+	printf("%LE\n", Factorial(n) / (Factorial(r) * Factorial(n-r)));
 	
 	printf("To end of program, input any character and enter...");
 	scanf("%d", &input);
