@@ -61,6 +61,7 @@ int main(int argc, char* argv[])
 	mpz_clear(result_n_minus_r);
 	mpz_clear(result_r_mul_n_minus_r);
 	mpz_clear(result_combination);
+	free(result_combination_str);
 
 	printf("To end of program, input any character and enter...");
 	scanf("%d", &input);
