@@ -9,7 +9,8 @@
             "command": "gcc",
             "args": [
                 "-g",
-                "Problem15.c"
+                "Problem15.c",
+                "-lgmp"
             ],
             "group": {
                 "kind": "build",

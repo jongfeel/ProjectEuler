@@ -3,7 +3,7 @@
 ## Lattice Paths
 
 > Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.\
-![Alt text](https://projecteuler.net/project/images/p015.gif)\
+![Grid path](https://projecteuler.net/project/images/p015.gif)\
 How many such routes are there through a 20×20 grid?
 
 Korean: [http://euler.synap.co.kr/prob_detail.php?id=15](http://euler.synap.co.kr/prob_detail.php?id=15)\
@@ -20,19 +20,26 @@ English: [https://projecteuler.net/problem=15](https://projecteuler.net/problem=
 
 - [https://sourceforge.net/projects/mingw/files/](https://sourceforge.net/projects/mingw/files/)
 
+## MinGW library install gmplib
+
+- Open MinGW installation manager
+- All Packages > MinGW > MinGW Libraries > MinGW Standard Libraries
+- Check mingw32-gmp, mingw32-libgmp, mingw32-libgmpxx
+- ![MinGW Install Manager]()
+
 ## Test - bash
 
 Change directory git root: /Problem15
 and compile
 
 ```bash
-gcc Problem15.c
+gcc Problem15.c -lgmp
 ```
 
 with debugging: [https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options](https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options)
 
 ```bash
-gcc -g Problem15.c
+gcc -g Problem15.c -lgmp
 ```
 
 > Windows Environment Settings\
@@ -53,6 +60,7 @@ a
     - Use MinGW installed your path
   - tasks.json
     - Use gdb debug: args[0] = "-g"
+    - Use gmplib: args[2] = "-lgmp"
 - Press F5 to debug start
 
 ## Solve
@@ -79,6 +87,26 @@ a
 - 그런데 이 문제를 풀기 위해 선택한 C언어가 가지는 data type으로는 표현할 수 없는 크기의 수 이므로, 큰 숫자를 표현하는 다른 방법을 사용해야 한다.
 - 무모하게 시도해 보려 했던 코드는 일단 짜 두고 github log에 남겨둔다.
 
-## Solve - Programming
+## Solve - GMP
 
 - 사실 실제 수학에서는 문제될 일이 없는 거지만 이걸 프로그래밍으로 풀어내려면 큰 숫자를 다룰 수 있는 뭔가를 만들어 내야 한다.
+- 학부 시절에 연습용 과제로 아주 큰 수를 char[]로 해서 계산기를 만들었던 기억이 있다면 그렇게 만들어도 된다.
+- 그런데 이 문제의 의도가 큰 수를 다루는 프로그래밍이 목적이 아니라는 것을 기억해야 하며
+- 큰 수를 다루는 프로그래밍의 요구는 수십년 전 부터 있어왔을 것이므로 검색해 보면
+- 우리는 훌륭한 선배님들이 만들어 놓은 아름다운 라이브러리를 만나게 된다.
+- [GNU Multiple Precision Arithmetic Library (GMP)](https://en.wikipedia.org/wiki/GNU_Multiple_Precision_Arithmetic_Library)
+- 이걸 사용해서 문제를 해결하면 된다.
+
+## Solve - Programming
+
+- 큰 수를 다루는 struct를 사용하고 그 struct를 연산해 주는 함수를 적절히 사용하면 큰 수의 계산이 가능해진다.
+- 매뉴얼을 참고해서 설치방법 부터 해서 기본 적인 함수들에 대해 찾아보면 어렵지 않게 구현이 가능하다.
+- [https://gmplib.org/manual/index.html#Top](https://gmplib.org/manual/index.html#Top)
+- mpz_t는 포인터를 가지는 구조체이므로 선언한 후에 초기화/해제 함수를 만드시 사용해야 한다.
+  - mpz_init_set_ui는 초기화 하면서 unsigned long int 값으로 초기값을 넣어준다.
+  - mpz_clear는 해당 구조체의 메모리를 해제한다.
+- mpz_mul_ui는 누산기 함수로 두번째 파라미터의 값에 세번째 파라미터인 unsigned long int 값을 곱해 첫번째 파라미터로 값을 세팅한다.
+  - 이 함수를 n번 호출하면 자연스럽게 n factorial의 값을 구할 수 있게 된다.
+- mpz_mul, mpz_divexact 함수는 곱셉과 나눗셈 함수로 mpz_t 구조체 자체를 연산할 수 없기 때문에 함수의 도움을 받아 연산을 한다.
+- 나머지 주석 부분은 출력값 확인을 위한 것인데 mpz_get_str로 char*를 구할 수 있다. 두번째 파라미터인 base의 값은 말 그대로 base이며 진수 값을 넣으면 된다.
+- 사실 설명을 하긴 했지만 매뉴얼 보고 하면 금방 할 수 있다.
