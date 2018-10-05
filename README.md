@@ -27,6 +27,10 @@ ProjectEuler practice
 
 - TIOBE index for September 2018, Ranking Top 2: C
 
+### [Problem 12, Highly divisible triangular number, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem12)
+
+- TIOBE index for September 2018, Ranking Top 1: Java
+
 ### [Problem 11, Largest product in a grid, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem11)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
