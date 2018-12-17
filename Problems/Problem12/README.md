@@ -46,4 +46,33 @@ java Problem12
 
 ## Solve
 
-- 
+### Optimization
+
+#### Loop range
+
+- 상식적인 수준의 range를 구해서 최적화를 진행해 본다.
+- 삼각수(triangle number)는 자연수 1부터 n 까지의 합인 숫자를 대상으로 한다.
+- 약수 (divisor factor)의 개수는 적어도 해당 삼각수의 개수에 한참을 미치지 못하므로 값이 작은 삼각수는 대상에서 제외시킨다.
+- 대략 1000부터 시작해서 언제 500개의 divisor factor를 가진 삼각수가 나올지 모르므로 충분히 큰 수인 100000000 만큼의 loop를 돌린다.
+
+#### Divisor factor
+
+- divisor factor의 개수를 구하는 경우 제곱근 값 만큼 loop를 돌리고 x2를 해주는 방법으로 삼각수의 divisor factor를 구한다.
+- 이유는 소수 구하는 방식과 비슷한데 자신의 제곱근의 수보다 작은 수 중에 소수가 있는지 판별해도 소수인지 알 수 있다는 방법에 근거해서 만든 것이다.
+- 1과 자기자신의 수를 제외하고 제곱근 보다 작은 divisor factor의 개수 x 2를 구하면 총 divisor factor의 개수를 구할 수 있다.
+
+#### Get triangle number
+
+- 여태까지 euler project를 잘 해왔다면 1부터 n까지의 합의 수인 삼각수를 프로그래밍적인 방법인 1부터 n까지 for문 돌리기로 **구하지 않아야만 한다.**
+- [Problem6](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem6)를 풀 때의 방법을 이용해 i * (i + 1) / 2의 방법을 이용해 삼각수를 구한다.
+
+### Example
+
+#### Case 28
+
+- 1은 모든 수의 divisor factor이므로 1을 세고 시작하고 loop는 2부터 돌린다.
+- Sqrt(28)은 대략 5.291xxx가 나오는데 정수값으로 5가 나온다.
+- 2부터 해서 삼각수 28을 2,3,4,5로 나눴을 때 나머지 없이 나누어 떨어지는 수는 2, 4 이고 이때 갯수를 2씩 더해준다.
+  - 나누어 떨어지는 수를 다 구하고 나중에 x2를 해도 상관은 없는데 코드 한줄 더 줄이려고 2씩 더한 것이다.
+- loop가 끝나면 마지막으로 삼각수 자기 자신의 수를 더한다.
+- 그러면 총 6의 값이 나오고 이는 28의 divisor factor의 개수라는 걸 알 수 있다.
