@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 16, Power digit sum, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem16)
+
+- TIOBE index for December 2018, Ranking Top 3: Python
+
 ### [Problem 15, Lattice paths, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem15)
 
 - TIOBE index for September 2018, Ranking Top 2: C

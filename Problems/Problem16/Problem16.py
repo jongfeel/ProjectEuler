@@ -1,0 +1,1 @@
+print(sum(int(val[1]) for val in enumerate(str(pow(2, 1000)))))
