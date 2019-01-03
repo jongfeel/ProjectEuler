@@ -31,7 +31,7 @@ ProjectEuler practice
 
 - TIOBE index for September 2018, Ranking Top 2: C
 
-### [Problem 13, Large Sum, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem13)
+### [Problem 13, Large Sum, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem13)
 
 - TIOBE index for January 2019, Ranking Top 5: Visual Basic .NET
 
