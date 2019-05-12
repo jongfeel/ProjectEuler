@@ -23,62 +23,62 @@ ProjectEuler practice
 
 ## Problems
 
-### [Problem 16, Power digit sum, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem16)
+### [Problem 16, Power digit sum](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem16)
 
 - TIOBE index for December 2018, Ranking Top 3: Python
 
-### [Problem 15, Lattice paths, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem15)
+### [Problem 15, Lattice paths](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem15)
 
 - TIOBE index for September 2018, Ranking Top 2: C
 
-### [Problem 13, Large Sum, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem13)
+### [Problem 13, Large Sum](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem13)
 
 - TIOBE index for January 2019, Ranking Top 5: Visual Basic .NET
 
-### [Problem 12, Highly divisible triangular number, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem12)
+### [Problem 12, Highly divisible triangular number](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem12)
 
 - TIOBE index for September 2018, Ranking Top 1: Java
 
-### [Problem 11, Largest product in a grid, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem11)
+### [Problem 11, Largest product in a grid](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem11)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem 10, Summation of primes, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem10)
+### [Problem 10, Summation of primes](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem10)
 
 - TIOBE index for August 2018, Ranking Top 5: Visual Basic .NET
 
-### [Problem 9, Special Pythagorean triplet, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem9)
+### [Problem 9, Special Pythagorean triplet](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem9)
 
 - TIOBE index for August 2018, Ranking Top 2: C
 
-### [Problem 8, Largest product in a series, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem8)
+### [Problem 8, Largest product in a series](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem8)
 
 - TIOBE index for August 2018, Ranking Top 1: Java
 
-### [Problem 7, 10001st prime, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem7)
+### [Problem 7, 10001st prime](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem7)
 
 - TIOBE index for August 2018, Ranking Top 4: Python
 
-### [Problem 6, Sum square difference, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem6)
+### [Problem 6, Sum square difference](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem6)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem 5, Smallest multiple, C++](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem5)
+### [Problem 5, Smallest multiple](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem5)
 
 - TIOBE index for August 2018, Ranking Top 3: C++
 
-### [Problem 4, Largest palindrome product, C](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem4)
+### [Problem 4, Largest palindrome product](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem4)
 
 - TIOBE index for July 2018, Ranking Top 2: C
 
-### [Problem 3, Largest prime factor, Visual Basic .NET](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem3)
+### [Problem 3, Largest prime factor](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem3)
 
 - TIOBE index for July 2018, Ranking Top 5: Visual Basic .NET
 
-### [Problem 2, Even Fibonacci numbers, Python](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem2)
+### [Problem 2, Even Fibonacci numbers](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem2)
 
 - TIOBE index for July 2018, Ranking Top 4: Python
 
-### [Problem 1, Multiples 3 and 5, Java](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem1)
+### [Problem 1, Multiples 3 and 5](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem1)
 
 - TIOBE index for Jun 2018, Ranking Top 1: Java
