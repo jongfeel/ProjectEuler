@@ -110,9 +110,11 @@ English: [https://projecteuler.net/problem=13](https://projecteuler.net/problem=
 
 ## System Requirement
 
-- Tool: Visual Studio Community 2017
+- Tool: Visual Studio Community 2019
 - Language: Visual Basic .NET
-- Framework: .NET Core 2.0
+- Framework
+  - .NET Core 2.1
+  - Version: 2.1.700-preview-009618
 - Visual Studio Project: .NET Core Console App
 
 ## .NET Core 2.1 SDK Downloads (If you do not want Visual Studio Community 2017)
@@ -121,7 +123,7 @@ English: [https://projecteuler.net/problem=13](https://projecteuler.net/problem=
 
 ## Test - bash
 
-Change directory git root: /Problem10
+Change directory git root: /Problem13
 and compile
 
 ```bash
@@ -134,10 +136,10 @@ Run
 dotnet run
 ```
 
-## Test - Visaul Studio Community 2017
+## Test - Visaul Studio Community 2019
 
-- Open visual studio solution file "Problem13.sln" by Visual Studio Community 2017
-- Check out install packages - .NET Core 2.0 and Visual Basic Environment
+- Open visual studio solution file "Problem13.sln" by Visual Studio Community 2019
+- Check out install packages - .NET Core 2.1 and Visual Basic Environment
 - Press F5 to debug start
 
 ## Solve
@@ -145,6 +147,7 @@ dotnet run
 - 역시 수 자체가 크므로 C 계열의 GMP나 Python을 쓰면 해결될 거 같지만 선택 언어는 VB.NET이다.
 - 그런데 이렇게 큰 수를 더하는게 의미가 있지는 않을 거 같으니 다른 방법으로 풀어본다.
 - 잘 보면 다 더한 수의 앞자리 10자리만 구하면 되므로 50자리나 되는 수를 더할 게 아니라 앞자리 10개만 잘라서 계산해도 ULong type으로 충분히 계산이 가능하다.
+  - **주의**할 점은 11자리까지 가져와서 계산해야 한다. 왜냐하면 11번째 자리에서 올림 수가 발생하면 10번째 자리에 영향을 주기 때문이다.
   - VB.NET에서 ULong type은 0 ~ 18,446,744,073,709,551,615 범위를 가진다.
   - [https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference//data-types/ulong-data-type](https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference//data-types/ulong-data-type)
 - 그렇게 구한 값을 string으로 변환하여 앞의 10자리만 substring으로 얻으면 값을 구할 수 있다.
