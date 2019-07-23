@@ -31,6 +31,10 @@ ProjectEuler practice
 
 - TIOBE index for September 2018, Ranking Top 2: C
 
+### [Problem 14, Longest Collatz sequence](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem14)
+
+- TIOBE index for July 2019, Ranking Top 4: C++
+
 ### [Problem 13, Large Sum](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem13)
 
 - TIOBE index for January 2019, Ranking Top 5: Visual Basic .NET
