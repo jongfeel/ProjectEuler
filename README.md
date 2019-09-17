@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 17, Number letter counts](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem17)
+
+- TIOBE index for September 2019, Ranking Top 1: Java
+
 ### [Problem 16, Power digit sum](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem16)
 
 - TIOBE index for December 2018, Ranking Top 3: Python

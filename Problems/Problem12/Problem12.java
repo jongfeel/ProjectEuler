@@ -1,4 +1,4 @@
-﻿import java.util.stream.IntStream;
+import java.util.stream.IntStream;
 
 public class Problem12 {
 
