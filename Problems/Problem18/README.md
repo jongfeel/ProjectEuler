@@ -86,3 +86,9 @@ a
 
 ## Solve
 
+### 사실은...
+
+- 이 문제를 어떻게 풀어야 하는지 이미 알고 있는데, 그 이유는 아래의 링크에서 같은 문제를 풀어봤기 때문이다.
+- [https://github.com/jongfeel/SongDoAlgorithmStudy/tree/master/Problems/43105](https://github.com/jongfeel/SongDoAlgorithmStudy/tree/master/Problems/43105)
+- 그것도 무려 javascript로 풀고 성능 측정한다고 python으로도 풀어봄.
+- 그래서 더이상의 자세한 설명은 생략한다.
