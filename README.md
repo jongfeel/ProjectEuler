@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 20, Factorial digit sum](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem20)
+
+- TIOBE index for February 2020, Ranking Top 2: C
+
 ### [Problem 19, Counting Sundays](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem19)
 
 - TIOBE index for December 2019, Ranking Top 5: C#
