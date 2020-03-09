@@ -65,10 +65,10 @@ java Problem17
   - 42를 가지고 10으로 나눈 몫을 구해본다.
     - 1이면 특수한 경우로 별도로 처리한다.
       - 특수한 경우란 eleven, twelve로 시작하는 10~19 사이의 숫자를 의미한다.
-    - 여기서는 몫이 4이므로 "fourty"로 만든다.
+    - 여기서는 몫이 4이므로 "forty"로 만든다.
   - 나머지 값을 구한다 2가 남는다.
     - 2면 "two"로 만든다
-  - 최종적으로 "threehundredandfourtytwo"가 만들어지고 length는 23이 된다.
+  - 최종적으로 "threehundredandfortytwo"가 만들어지고 length는 23이 된다.
   - sum 변수에 더해준다.
 - 이걸 판단하는 변수 값을 만들어 내면 다음과 같다. Problem17.java 파일에서 7 ~ 13 line에 해당한다.
 
