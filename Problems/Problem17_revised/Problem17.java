@@ -1,4 +1,39 @@
 public class Problem17 {
+    public static String OneToNine(int value) {
+        String numString = new String();
+        switch (value) {
+            case 1:
+                numString = "one";
+                break;
+            case 2:
+                numString = "two";
+                break;
+            case 3:
+                numString = "three";
+                break;
+            case 4:
+                numString = "four";
+                break;
+            case 5:
+                numString = "five";
+                break;
+            case 6:
+                numString = "six";
+                break;
+            case 7:
+                numString = "seven";
+                break;
+            case 8:
+                numString = "eight";
+                break;
+            case 9:
+                numString = "nine";
+                break;
+            default:
+                break;
+        }
+        return numString;
+    }
     public static void main(final String[] args) {
         int sum = 0;
         for (int i = 1; i <= 1000; i++) {
@@ -20,38 +55,7 @@ public class Problem17 {
             }
 
             if (thousandMod > 0 && hundred > 0) {
-                switch (hundred) {
-                    case 1:
-                        numString += "one";
-                        break;
-                    case 2:
-                        numString = "two";
-                        break;
-                    case 3:
-                        numString = "three";
-                        break;
-                    case 4:
-                        numString = "four";
-                        break;
-                    case 5:
-                        numString = "five";
-                        break;
-                    case 6:
-                        numString = "six";
-                        break;
-                    case 7:
-                        numString = "seven";
-                        break;
-                    case 8:
-                        numString = "eight";
-                        break;
-                    case 9:
-                        numString = "nine";
-                        break;
-                    default:
-                        break;
-                }
-                numString += "hundred";
+                numString += OneToNine(hundred) + "hundred";
                 if (hundredMod != 0)
                 {
                     numString += "and";
@@ -128,37 +132,7 @@ public class Problem17 {
             }
 
             if (tenMod > 0 && one > 0 && ten != 1) {
-                switch (one) {
-                    case 1:
-                        numString += "one";
-                        break;
-                    case 2:
-                        numString += "two";
-                        break;
-                    case 3:
-                        numString += "three";
-                        break;
-                    case 4:
-                        numString += "four";
-                        break;
-                    case 5:
-                        numString += "five";
-                        break;
-                    case 6:
-                        numString += "six";
-                        break;
-                    case 7:
-                        numString += "seven";
-                        break;
-                    case 8:
-                        numString += "eight";
-                        break;
-                    case 9:
-                        numString += "nine";
-                        break;
-                    default:
-                        break;
-                }
+                numString += OneToNine(one);
             }
 
             //System.out.println(numString);
