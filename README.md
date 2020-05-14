@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 21, Amicable numbers](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem21)
+
+- TIOBE index for May 2020, Ranking Top 5: C#
+
 ### [Problem 17 revised, Number letter counts](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem17_revised)
 
 - TIOBE index for September 2019, Ranking Top 1: Java
