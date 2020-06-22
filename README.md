@@ -23,6 +23,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 22, Names scores](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem22)
+
+- TIOBE index for June 2020, Ranking Top 2: Java
+
 ### [Problem 21, Amicable numbers](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem21)
 
 - TIOBE index for May 2020, Ranking Top 5: C#
