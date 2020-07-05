@@ -23,15 +23,9 @@ public class Problem22 {
             List<String> nameList = Arrays.asList(names);
             Collections.sort(nameList);
 
-            int index = 1;
-            int namesSum = 0;
-            for (String name : nameList) {
-                int nameSum = name.chars().map(nameChar -> nameChar - 64).sum();
-                namesSum += nameSum * index;
-                index++;
-            }
-
-            System.out.println(namesSum);
+            int[] index = { 1 };
+            int sum = nameList.stream().map(name -> name.chars().map(nameChar -> nameChar - 64).sum() * index[0]++).mapToInt(Integer::intValue).sum();
+            System.out.println(sum);
 
         } catch (Exception e) {
         }
