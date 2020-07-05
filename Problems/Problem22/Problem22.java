@@ -26,10 +26,7 @@ public class Problem22 {
             int index = 1;
             int namesSum = 0;
             for (String name : nameList) {
-                int nameSum = 0;
-                for (int i = 0; i < name.length(); i++) {
-                    nameSum += name.charAt(i) - 64;
-                }
+                int nameSum = name.chars().map(nameChar -> nameChar - 64).sum();
                 namesSum += nameSum * index;
                 index++;
             }
