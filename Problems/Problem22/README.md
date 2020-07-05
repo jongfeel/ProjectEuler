@@ -56,3 +56,43 @@ java Problem22
   - 그런데 이번 문제는 이정도 까지를 요구하는 문제는 아닌 듯 하여 그냥 sort 함수를 잘 이용하는 걸로
 - ASCII를 모른다면 A ~ Z 까지의 상수 값을 가지는 HashMap을 준비하고 활용해도 될 듯
   - HashMap<char, int> 의 형태가 될 것이다.
+
+## Solve use Java stream
+
+- 사실 for문 돌려서 문제를 풀어도 전혀 문제는 없다.
+- 하지만 이걸 java stream으로 바꾸면 왠지 한줄로 코딩이 가능할 것 같다는 생각에 수정해 본다.
+
+### Step1, name score
+
+- name의 점수를 구하는 건 각 char 값에서 64를 빼는 건 같다.
+- 여기서 sum을 구하는 건 stream.sum()을 이용해서 해보면 코드양을 많이 줄일 수 있다.
+- commit log 참고 [a61d1e3a](
+https://github.com/jongfeel/ProjectEuler/commit/a61d1e3a83c8169a68e62699a96c25f685645119#diff-ef76b6a431faf9be7dca2da4bc2bdd14)
+
+``` java
+int nameSum = 0;
+for (int i = 0; i < name.length(); i++) {
+    nameSum += name.charAt(i) - 64;
+}
+```
+
+``` java
+int nameSum = name.chars().map(nameChar -> nameChar - 64).sum();
+```
+
+### step2, names score
+
+- 같은 방법으로 sort가 된 nameList를 stream을 만들어준다.
+- 여기서 포인트는 index의 증가분 만큼 곱셈을 해줘야 하는 데 그냥 int index = 1; 이걸 쓰면 문제가 생긴다.
+- 왜냐하면 stream 함수 안에서 쓰는 변수는 다 상수값으로만 써야하는데 바깥에 있는 변수를 쓰려면 오류가 생기기 때문이다.
+- 그래서 꼼수를 쓰는데 local에서 쓰고 싶으면 int[] 객체를 만들어서 써서 접근하는 방식이 있고
+  - [0138928](https://github.com/jongfeel/ProjectEuler/commit/01389281ec827a97b834e6f16f0e3c8e9084d0d1#diff-ef76b6a431faf9be7dca2da4bc2bdd14)
+- 아예 static으로 class field로 두는 방법이 있다.
+  - [2b472be](https://github.com/jongfeel/ProjectEuler/commit/2b472be30466bed0c7f6b02b4ea95e9a466eeb13#diff-ef76b6a431faf9be7dca2da4bc2bdd14)
+- 최종 코드
+
+``` java
+int sum = nameList.stream().map(name -> name.chars().map(nameChar -> nameChar - 64).sum() * index++).mapToInt(Integer::intValue).sum();
+```
+
+> :heavy_check_mark: 결국 한 줄로 코드가 만들어졌다!
