@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Problem22 {
 
+    static int index = 1;
     public static void main(final String[] args) {
 
         System.out.println("Problem22");
@@ -22,9 +23,7 @@ public class Problem22 {
             
             List<String> nameList = Arrays.asList(names);
             Collections.sort(nameList);
-
-            int[] index = { 1 };
-            int sum = nameList.stream().map(name -> name.chars().map(nameChar -> nameChar - 64).sum() * index[0]++).mapToInt(Integer::intValue).sum();
+            int sum = nameList.stream().map(name -> name.chars().map(nameChar -> nameChar - 64).sum() * index++).mapToInt(Integer::intValue).sum();
             System.out.println(sum);
 
         } catch (Exception e) {
