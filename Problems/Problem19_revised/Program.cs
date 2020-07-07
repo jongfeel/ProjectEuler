@@ -17,13 +17,16 @@ namespace Problem19_revised
                     {
                         dayOfMonth = 30;
                     }
-                    else if (year % 4 == 0)
+                    else if (month == 2)
+                    {
+                    if (year % 4 == 0)
                     {
                         dayOfMonth = 29;
                     }
                     else
                     {
                         dayOfMonth = 28;
+                    }
                     }
                     for (int day = 1; day <= dayOfMonth; day++)
                     {
