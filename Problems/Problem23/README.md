@@ -72,7 +72,8 @@ a
 ## Reuse and apply function
 
 - [21번 문제](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem21)에서 이미 proper divisor의 합을 구하는 함수를 만든 적이 있으므로 이 함수를 응용해서 abundant 함수를 구한다.
-- https://github.com/jongfeel/ProjectEuler/blob/0d84e0fed82ed8845b86edf7921b6043f049fe09/Problems/Problem21/Program.cs#L8
+
+https://github.com/jongfeel/ProjectEuler/blob/0d84e0fed82ed8845b86edf7921b6043f049fe09/Problems/Problem21/Program.cs#L8
 
 ## Limit
 
@@ -115,7 +116,7 @@ bool IsAbundant(int number);
 - 즉 28123 - 12 = 28111의 크기를 가진 list에 12부터 28123까지의 값을 가지도록 초기화 시켜 두고
 - 두 수의 합에 해당하는 숫자가 나오면 그 숫자에 해당하는 index의 value를 0으로 바꿔준다.
 - 가장 마지막에 list의 sum을 구하면 두 abundant 수의 합이 아닌 모든 양의 정수의 합을 구할 수 있다.
-- C++로 구현해야 하므로 이 list는 vector<int> 변수로 아래와 같이 정의할 수 있다.
+- C++로 구현해야 하므로 이 list는 vector< int > 변수로 아래와 같이 정의할 수 있다.
 - 여기까지 읽고도 이해가 안될 수 있으므로 [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)를 참고한다.
 
 ``` cpp
@@ -126,4 +127,6 @@ vector<int> NotSumOfTwoAbundantNumbers;
 
 - 위의 개념을 모두 조합해서 문제를 푼다.
 - 12부터 28123까지 for loop을 돈다.
-- abundant number인지를 체크하기 위해 
+- abundant number인지를 체크하기 위해 여태까지 구한 abundant number들의 for loop을 돌면서 두 abundant number의 합을 구해 나간다.
+- 그 수에 해당하는 NotSumOfTwoAbundantNumbers의 index 값을 0으로 세팅해서 지워 나간다.
+- 최종적으로 NotSumOfTwoAbundantNumbers의 sum을 구하면 답을 얻을 수 있다.
