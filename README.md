@@ -57,6 +57,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 23, Non-abundant sums](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem23)
+
+- TIOBE index for July 2020, Ranking Top 4: C++
+
 ### [Problem 19 revised, Counting Sundays](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem19_revised)
 
 - TIOBE index for December 2019, Ranking Top 5: C#
