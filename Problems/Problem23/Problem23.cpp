@@ -19,15 +19,11 @@ bool IsAbundant(int number)
 
 int main() 
 {
-    vector<int> NotSumOfTwoAbundantNumbers;
-    for (int i = 0; i <= 28123; i++)
-    {
-        NotSumOfTwoAbundantNumbers.push_back(i);
-    }
-
+    vector<int> NotSumOfTwoAbundantNumbers(28124);
     vector<int> AbundantNumbers;
-    for (int i = 12; i <= 28123; i++)
+    for (int i = 28123; i > 0; i--)
     {
+        NotSumOfTwoAbundantNumbers[i] = i;
         if (IsAbundant(i))
         {
             AbundantNumbers.push_back(i);
