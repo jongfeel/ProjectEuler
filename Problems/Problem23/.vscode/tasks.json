@@ -4,11 +4,11 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build Problem 18",
+            "label": "build Problem 23",
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g", "Problem18.cpp"
+                "-g", "Problem23.cpp"
             ],
             "group": {
                 "kind": "build",
