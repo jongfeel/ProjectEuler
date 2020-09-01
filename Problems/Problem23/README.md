@@ -88,6 +88,16 @@ for (int i = 12; i <= 28123; i++)
 }
 ```
 
+- 나중에 최적화 하면서 for문을 바꿨는데 마지막 단락의 optimized를 확인한다.
+- 이렇게 reverse for loop을 만들면 Abundant가 아닌 수의 합을 위해 초기화를 진행하고 동시에 abundant 수를 구하면서 체크해 나갈 수 있다.
+
+``` cpp
+for (int i = 28123; i > 0; i--)
+{
+  // ...
+}
+```
+
 ## IsAbundant function
 
 - 약수를 구하고 합을 구하기 전까지는 abundant한지 알 수 없으므로 아래와 같이 함수를 정의한다.
@@ -113,7 +123,6 @@ bool IsAbundant(int number);
 ## Check sum of two abundant
 
 - 두 Abundant수의 합이 아닌 걸 찾아내야 하고 12 부터 28123까지를 계속 체크해야 하므로 [10번 문제](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem10)에서 썼던 에라토스테네스의 체 아이디어를 응용한다.
-- 즉 28123 - 12 = 28111의 크기를 가진 list에 12부터 28123까지의 값을 가지도록 초기화 시켜 두고
 - 두 수의 합에 해당하는 숫자가 나오면 그 숫자에 해당하는 index의 value를 0으로 바꿔준다.
 - 가장 마지막에 list의 sum을 구하면 두 abundant 수의 합이 아닌 모든 양의 정수의 합을 구할 수 있다.
 - C++로 구현해야 하므로 이 list는 vector< int > 변수로 아래와 같이 정의할 수 있다.
@@ -126,7 +135,22 @@ vector<int> NotSumOfTwoAbundantNumbers;
 ## Solve
 
 - 위의 개념을 모두 조합해서 문제를 푼다.
-- 12부터 28123까지 for loop을 돈다.
+- 28123부터 1까지 for loop을 거꾸로 돈다.
+- NotSumOfTwoAbundantNumbers에 index에 해당하는 값을 index 값으로 assign 한다.
+- IsAbundant로 abundant 수인지 확인한 후 AbundantNumbers에 추가한다.
 - abundant number인지를 체크하기 위해 여태까지 구한 abundant number들의 for loop을 돌면서 두 abundant number의 합을 구해 나간다.
 - 그 수에 해당하는 NotSumOfTwoAbundantNumbers의 index 값을 0으로 세팅해서 지워 나간다.
+  - 단 index 28123이 넘지 않는 선에서 0으로 세팅한다. (prevent OutOfRangeException)
 - 최종적으로 NotSumOfTwoAbundantNumbers의 sum을 구하면 답을 얻을 수 있다.
+
+## Maintanence
+
+### Optimized
+
+- Vector < int > NotSumOfTwoAbundantNumbers의 경우 index에 해당하는 값 역시 index여야 하므로 초기화가 필요하긴 하다.
+- 그래서 최초에 초기화 시켜주는 for loop을 만들었다. 아래 commit diff 참고
+- [11530405](https://github.com/jongfeel/ProjectEuler/commit/11530405ce3f98343fa926e1a904861a0a355e8e#diff-a3787ca0674b0d81c6bfed1dc2e2aa6d)
+- 그런데 다시 보니 또 12 부터 28123 까지 loop을 돌아야 하는데 이걸 한번에 돌릴 수 없을까를 고민하다가 reverse for loop으로 바꿨다.
+- 힌트는 Sum of two abundant를 구하면 반드시 현재 index에 해당하는 수는 IsAbundant로 체크가 되고 abundant가 맞을 때 그 수 보다는 큰 숫자들이 index가 될 수 밖에 없으므로 reverse for loop을 돌리되 Sum of two abundant의 index가 28123이 넘지 않도록 체크만 해주면??
+- Vector < int > NotSumOfTwoAbundantNumbers에 index에 해당하는 index 값을 넣어줌과 동시에 이미 reverse for loop에서 지나간 index에 해당하는 Sum of two abundant의 index를 0으로 만들 수 있기에 바꿨다.
+- 이건 자랑할만함!
