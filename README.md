@@ -55,6 +55,11 @@ ProjectEuler practice
 - 주어진 문제 내애서 해결해야 하는 방안을 코드로 구현할 수 있게 설계를 진행하고 문서 작성을 함
 - 코딩은 그 다음에 해도 늦지 않음
 
+## Notes
+
+- 문제를 푸는데 필요한 수학적 개념을 따로 정리
+- 링크 참고: [Notes](/Notes.md)
+
 ## Problems
 
 ### [Problem 23, Non-abundant sums](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem23)
