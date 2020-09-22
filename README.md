@@ -62,6 +62,11 @@ ProjectEuler practice
 
 ## Problems
 
+
+### [Problem 24, Lexicographic permutations](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem24)
+
+- TIOBE index for September 2020, Ranking Top 3: Python
+
 ### [Problem 23, Non-abundant sums](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem23)
 
 - TIOBE index for July 2020, Ranking Top 4: C++
