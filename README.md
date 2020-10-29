@@ -62,6 +62,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 1 revised, Multiples 3 and 5](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem1_revised)
+
+- TIOBE index for Jun 2018, Ranking Top 1: Java
+
 ### [Problem 25, 1000-digit Fibonacci number](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem25)
 
 - TIOBE index for October 2020, Ranking Top 1: C
