@@ -1,5 +1,8 @@
 public class Problem1 {
 
+    // n is count
+    // a is start number
+    // l is last number
     public static int SumOfAP(int n, int a, int l) {
         return n * (a + l) / 2;
     }
