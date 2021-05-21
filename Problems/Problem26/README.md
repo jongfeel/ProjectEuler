@@ -54,3 +54,56 @@ float 계산이 여기까지 된다.
 - 953, 967, 971, 977, 983, 991
 
 ## Design
+
+### Get prime number
+
+소수를 만드는 방법은 이미 [Problem3](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem3)에서 [IsPrime](https://github.com/jongfeel/ProjectEuler/blob/ffc11ed47c343586fd0408778afe477068bf64f5/Problems/Problem3/Problem3/Program.vb#L28-L35) 함수를 만들었으므로 이번 문제에서 풀어볼 C# 버전으로 바꿔서 적용해본다.
+
+### Make recurring cycle
+
+C#에는 [System.Numerics.BigInteger](https://docs.microsoft.com/en-us/dotnet/api/system.numerics.biginteger?view=net-5.0)를 지원하므로 이걸 사용해서 계산을 시도해 본다.
+
+또 float number의 자리 수를 구하기 어려우므로
+
+- pow(10000000000, 100)로 길이가 1000인 숫자 생성
+- 소수로 나눠서 나온 몫의 값 중 대략 5자리 이상 겹치는 순환 수를 찾음
+- 만약 찾아내면 그 전 몫의 자리수 까지가 소수보다 하나 작은 수의 순환 수를 가지는 소수이다!
+
+이쯤되면 python으로 하면 그냥 결과가 나올 것 같다.
+
+``` python
+print(pow(10000000000, 100) // 991)
+print(pow(10000000000, 100) // 983)
+print(pow(10000000000, 100) // 977)
+print(pow(10000000000, 100) // 971)
+print(pow(10000000000, 100) // 967)
+print(pow(10000000000, 100) // 953)
+```
+
+하지만 C#으로 풀어야 하므로 대략 아래와 같은 작전으로 풀어본다.
+pow(10000000000, 100)을 소수로 나눈 몫의 값이 순환이 일어나는 시점의 index가 소수보다 1이 작은 수인지 판별하는 코드이다. 
+
+``` csharp
+BigInteger dividend = BigInteger.Pow(10000000000, 100);
+for (int i = 1000; i > 1; i--)
+{
+    if (IsPrime(i))
+    {
+        BigInteger result = BigInteger.Divide(dividend, i);
+        
+        string resultString = result.ToString();
+        string recurringCycle5digit = resultString.SubString(0, 5);
+
+        int recurringCycle = resultString.IndexOf(recurringCycle5digit, 5, resultString.Count());
+
+        if (recurringCycle + 1 == i)
+        {
+          Console.WriteLine(i);
+          break;
+        }
+    }
+}
+```
+
+그냥 md 파일로 코딩했는데 다 짜버린 것 같다...
+실제 코딩은 다음에 하고 변경 사항 있으면 문서 업데이트 하면 될 듯.
