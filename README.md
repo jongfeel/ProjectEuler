@@ -11,15 +11,21 @@ ProjectEuler practice
 
 [http://ntalbs.github.io/](http://ntalbs.github.io/)
 
-## How to progress
+## How to pick programming language
 
-- 진행 방법에 대해 생각하다가 다음과 같이 하기로 했다.
-- 현재 (2018년 6월 기준) TIOBE 프로그래밍 언어 순위는 Java, C, C++, Python, C# 이 차례대로 1,2,3,4,5위를 차지하고 있다.
-- 이 순위는 매달 집계가 바뀌므로 언제 순위가 바뀔지 알 수 없다.
-- [현재 TIOBE 순위](https://www.tiobe.com/tiobe-index/)
-- 그래서 문제를 푸는 달의 순위 Top5 중 하나의 프로그래밍 언어로 랜덤하게 할 예정이다.
-- 랜덤이라고 해서 문제마다 같은 언어가 계속 선택되는게 아니라 문제 하나에 하나의 언어가 선택되면 다음 문제는 나머지 선택 안된 언어 중에서 선택된다는 얘기다.
-- 1-5번 문제는 랜덤하게 1-5위의 프로그래밍 언어로 하게 될 꺼고 다시 6-10번 문제를 1-5위의 프로그래밍 언어로 랜덤 하게 할 예정이다.
+### Before
+
+[TIOBE](https://www.tiobe.com/tiobe-index/) 순위 중 1 - 5위 까지의 프로그래밍 언어를 랜덤으로 하나씩 선택 해 문제를 풀고, 다음 문제는 나머지 선택되지 않은 프로그래밍 언어 중 랜덤하게 선택해서 풀어 나가는 방식
+
+### Now
+
+[2020 state of the octoverse](https://octoverse.github.com/)에서 Top languages over the years 순위를 참고해 1 - 10위 까지의 프로그래밍 언어를 랜덤으로 하나씩 선택해 풀고, 다음 문제는 나머지 선택되지 않은 프로그래밍 언어 중 랜덤하게 선택해서 풀어 나가는 방식.
+
+26번 문제부터 이 방식을 채택해서 진행함.
+
+2020 top languages over the years는 다음과 같다.
+
+![TopLanguagesOverTheYears_2020](TopLanguagesOverTheYears_2020.png)
 
 ## Solve sequence, using software engineering
 
@@ -61,6 +67,10 @@ ProjectEuler practice
 - 링크 참고: [Notes](/Notes.md)
 
 ## Problems
+
+### [Problem 26, Reciprocal cycles](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem26)
+
+- Top languages over the years 2020: picked programming is C# (top 5)
 
 ### [Problem 1 revised, Multiples 3 and 5](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem1_revised)
 
