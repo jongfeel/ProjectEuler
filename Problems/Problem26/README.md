@@ -107,3 +107,36 @@ for (int i = 1000; i > 1; i--)
 
 그냥 md 파일로 코딩했는데 다 짜버린 것 같다...
 실제 코딩은 다음에 하고 변경 사항 있으면 문서 업데이트 하면 될 듯.
+
+## Ready to development environment
+
+- [Visual Studio Code 1.56.2](https://code.visualstudio.com/)
+  - Add extension: C# for Visual Studio Code
+- SDK: [.NET 5 5.0.203](https://dotnet.microsoft.com/download/dotnet/5.0)
+
+## Build and run
+
+Change directory from git root
+
+``` bash
+cd Problems/Problem26
+```
+
+and build and run
+
+``` bash
+dotnet run
+```
+
+Run program after build
+
+```bash
+/bin/Debug/net5.0/Problem26.exe
+```
+
+## Build and run - Visaul Studio Code
+
+- Open folder "Problem26" by Visual Studio Code
+- Check out settings: launch.json and tasks.json
+- Press Ctrl + Shift + B to Build
+- Press F5 to debug start
