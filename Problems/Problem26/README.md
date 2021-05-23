@@ -92,9 +92,9 @@ for (int i = 1000; i > 1; i--)
         BigInteger result = BigInteger.Divide(dividend, i);
         
         string resultString = result.ToString();
-        string recurringCycle5digit = resultString.SubString(0, 5);
+        string recurringCycle5digit = resultString.Substring(0, 5);
 
-        int recurringCycle = resultString.IndexOf(recurringCycle5digit, 5, resultString.Count());
+        int recurringCycle = resultString.IndexOf(recurringCycle5digit, 5, resultString.Length - 5);
 
         if (recurringCycle + 1 == i)
         {
