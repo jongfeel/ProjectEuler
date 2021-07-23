@@ -68,6 +68,10 @@ ProjectEuler practice
 
 ## Problems
 
+### [Problem 27, Quadratic primes](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem27)
+
+- Top languages over the years 2020: picked programming is JavaScript (top 1)
+
 ### [Problem 26, Reciprocal cycles](https://github.com/jongfeel/ProjectEuler/tree/master/Problems/Problem26)
 
 - Top languages over the years 2020: picked programming is C# (top 5)
