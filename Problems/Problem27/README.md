@@ -79,11 +79,87 @@ Javascript, 2020 Top languages over the years 1st.
 
 ### Optimization
 
+a와 b에 대한 모든 정수를 탐색할 게 아니라 소수가 나오는 범위를 정해 놓는다면 4000000 loop를 안돌려도 될 수 있다.
 
+우선 n = 1일 때 a와 b의 상태를 체크해 본다.
+
+> 1 + a + b
+
+이 식이 소수가 되어야 하는데 모든 소수는 홀수 이므로 결국 a + b는 짝수여야 한다는 결론이 나온다.
+
+- 짝수 + 짝수 = 짝수
+- 짝수 + 홀수 = 홀수
+- 홀수 + 짝수 = 홀수
+- 홀수 + 홀수 = 짝수
+
+짝수가 나오는 경우의 수는 a와 b 모두 짝수이거나 모두 홀수이면 된다. 논리 게이트로 얘기하면 a [xnor](https://en.wikipedia.org/wiki/XNOR_gate) b의 결과를 얻으면 되므로 홀수가 나오는 경우는 loop 문에서 제외 (continue) 시킨다.
+
+이렇게 하면 총 탐색해야 하는 범위가 무려 50%가 줄어들어 2000000의 loop 안에서 탐색하면 되므로 최적화가 가능해진다.
 
 ## Design
 
+원래 brute force 방식의 for loop는 아래와 같다.
 
+- |a| < 1000 for loop
+- |b| < 1000 for loop
+- continuous isPrime count while loop
+
+``` javascript
+for (let a = -999; a < 1000; a++) {
+    for (let b = -999; b < 1000; b++) {
+        let n = 0;
+        while (isPrime(n ** 2 + a * n + b)) {
+            n++;
+        }
+        // get result of a multiply b when maximum n
+    }
+}
+```
+
+그리고 javascript로 짠 isPrime 함수는 아래와 같다.
+
+Problem 3에서 작성한 IsPrime 함수에서 number < 2 조건을 추가하고 javascript 버전으로 바꿔봤다.
+
+https://github.com/jongfeel/ProjectEuler/blob/df20739bb43fdf731027ba833943aee5e6ca9850/Problems/Problem3/Problem3/Program.vb#L28-L35
+
+``` javascript
+const isPrime = number => {
+    if (number < 2) {
+        return false;
+    }
+
+    const sqrt = Math.sqrt(number);
+    for (let i = 2; i <= sqrt; i++) {
+        if (number % i == 0) {
+            return false;
+        }
+    }
+    return true;
+};
+```
+
+### Optimization
+
+그런데 n = 1 일때 1 + a + b 이 소수(홀수)여야 하고 그러면 a + b가 짝수여야 하므로 짝수 + 짝수, 홀수 + 홀수만 짝수가 될 수 있으므로 이 조건이 아닌 a와 b에 대해서는 소수 판단 함수를 태우지 않는 쪽으로 한다.
+
+그래서 간단히 짝수를 판별하는 함수인 isEven 을 추가하고 if문을 추가해서 설계한다.
+
+``` javascript
+const isEven = number => number % 2 == 0;
+
+for (let a = -999; a < 1000; a++) {
+    for (let b = -999; b < 1000; b++) {
+        if ( (isEven(a) && !isEven(b)) || (!isEven(a) && isEven(b)) ) {
+            continue;
+        }
+        let n = 0;
+        while (isPrime(n ** 2 + a * n + b)) {
+            n++;
+        }
+        // get result of a multiply b when maximum n
+    }
+}
+```
 
 ## Ready to development environment
 
